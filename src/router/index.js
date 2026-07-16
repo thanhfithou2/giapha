@@ -1,0 +1,30 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+import Home from '../views/Home.vue'
+import Members from '../views/Members.vue'
+import Tree from '../views/Tree.vue'
+import About from '../views/About.vue'
+
+const routes = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/members',
+    component: Members
+  },
+  {
+    path: '/tree',
+    component: Tree
+  },
+  {
+    path: '/about',
+    component: About
+  }
+]
+
+export default createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes
+})
