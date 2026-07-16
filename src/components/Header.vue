@@ -1,32 +1,15 @@
-<template>
-  <header class="header">
-    <div class="container">
-      <h1>Gia phả họ Nguyễn</h1>
-      <p>Chi họ Nguyễn Xuân - Dòng VA</p>
-    </div>
-  </header>
-</template>
+<router-link class="nav-link" to="/">
+Trang chủ
+</router-link>
 
-<style scoped>
-.header{
-  background:#7b1e1e;
-  color:white;
-  padding:30px 20px;
-  text-align:center;
-}
+<router-link class="nav-link" to="/tree">
+Cây gia phả
+</router-link>
 
-.container{
-  max-width:1200px;
-  margin:auto;
-}
+<router-link class="nav-link" to="/members">
+Thành viên
+</router-link>
 
-h1{
-  margin:0;
-  font-size:34px;
-}
-
-p{
-  margin-top:8px;
-  opacity:.9;
-}
-</style>
+<router-link class="nav-link" to="/about">
+Giới thiệu
+</router-link>
